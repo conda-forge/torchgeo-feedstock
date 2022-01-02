@@ -12,7 +12,6 @@ source:
 
 build:
   number: 0
-  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -21,7 +20,7 @@ requirements:
     - python >=3.6
     - setuptools >=42
   run:
-    - dataclasses # [py==36]
+    - dataclasses  # [py==36]
     - einops
     - fiona >=1.5
     - kornia >=0.5.11
@@ -45,7 +44,9 @@ requirements:
 test:
   imports:
     - torchgeo
+    - torchgeo.datamodules
     - torchgeo.datasets
+    - torchgeo.losses
     - torchgeo.models
     - torchgeo.samplers
     - torchgeo.trainers
