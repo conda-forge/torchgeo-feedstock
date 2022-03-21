@@ -1,5 +1,5 @@
 {% set name = "torchgeo" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/torchgeo-{{ version }}.tar.gz
-  sha256: 968c4bf68c7e487bf495f2f306d8bb0f5824eb67e24b26772a510e753e04ba4c
+  sha256: 218bd5aed7680244688dbf0f1398f5251ad243267eb19a6a7332668ac779a1cc
 
 build:
   number: 0
@@ -33,12 +33,12 @@ requirements:
     - pytorch >=1.7
     - pytorch-lightning >=1.3
     - rasterio >=1.0.16
-    - rtree >=0.5
+    - rtree >=0.9.4
     - scikit-learn >=0.18
     - segmentation-models-pytorch >=0.2
     - shapely >=1.3
     - timm >=0.2.1
-    - torchmetrics
+    - torchmetrics >=0.7
     - torchvision >=0.10
 
 test:
@@ -51,10 +51,8 @@ test:
     - torchgeo.samplers
     - torchgeo.trainers
     - torchgeo.transforms
-  # Checks currently fail due to a dependency, uncomment once the following PR is merged:
-  # https://github.com/conda-forge/omegaconf-feedstock/pull/25
-  #commands:
-  #  - pip check
+  commands:
+    - pip check
   requires:
     - pip
 
