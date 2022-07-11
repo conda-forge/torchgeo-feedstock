@@ -63,7 +63,7 @@ about:
   dev_url: https://github.com/microsoft/torchgeo
   license: MIT
   license_file: LICENSE
-  summary: TorchGeo: datasets, samplers, transforms, and pre-trained models for geospatial data
+  summary: 'TorchGeo: datasets, samplers, transforms, and pre-trained models for geospatial data'
   description: |
     TorchGeo is a PyTorch domain library, similar to torchvision, providing datasets, samplers, transforms, and pre-trained models specific to geospatial data.
 
