@@ -1,5 +1,5 @@
 {% set name = "torchgeo" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 
 package:
@@ -8,38 +8,39 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/torchgeo-{{ version }}.tar.gz
-  sha256: 218bd5aed7680244688dbf0f1398f5251ad243267eb19a6a7332668ac779a1cc
+  sha256: 3d98fd58e6678555592a596bd079ed5a8b4959996ff7718d7caa48d47815b6b0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
-    - setuptools >=42
+    - python >=3.7,<4
+    - setuptools >=42,<64
   run:
-    - einops
-    - fiona >=1.5
-    - kornia >=0.5.11
-    - matplotlib-base
-    - numpy
-    - omegaconf >=2.1
-    - pillow >=2.9,<10
-    - pyproj >=2.2
-    - python >=3.7
-    - pytorch >=1.7
-    - pytorch-lightning >=1.3
-    - rasterio >=1.0.16
-    - rtree >=0.9.4
-    - scikit-learn >=0.18
-    - segmentation-models-pytorch >=0.2
-    - shapely >=1.3
-    - timm >=0.2.1
-    - torchmetrics >=0.7,<0.9
-    - torchvision >=0.10
+    - einops >=0.3,<0.5
+    - fiona >=1.8,<2
+    - kornia >=0.6.4,<0.7
+    - matplotlib-base >=3.3,<4
+    - numpy >=1.17.2,<2
+    - omegaconf >=2.1,<3
+    - packaging >=17,<22
+    - pillow >=6.2,<10
+    - pyproj >=2.2,<4
+    - python >=3.7,<4
+    - pytorch >=1.9,<2
+    - pytorch-lightning >=1.5.1,<2
+    - rasterio >=1.0.20,<2
+    - rtree >=1,<2
+    - scikit-learn >=0.21,<2
+    - segmentation-models-pytorch >=0.2,<0.3
+    - shapely >=1.3,<2
+    - timm >=0.4.12,<0.5
+    - torchmetrics >=0.7,<0.10
+    - torchvision >=0.10,<0.14
 
 test:
   imports:
@@ -62,14 +63,14 @@ about:
   dev_url: https://github.com/microsoft/torchgeo
   license: MIT
   license_file: LICENSE
-  summary: 'TorchGeo: datasets, transforms, and models for geospatial data'
+  summary: 'TorchGeo: datasets, samplers, transforms, and pre-trained models for geospatial data'
   description: |
-    TorchGeo is a PyTorch domain library, similar to torchvision, that provides datasets, transforms, samplers, and pre-trained models specific to geospatial data.
+    TorchGeo is a PyTorch domain library, similar to torchvision, providing datasets, samplers, transforms, and pre-trained models specific to geospatial data.
 
     The goal of this library is to make it simple
 
-    1. for machine learning experts to use geospatial data in their workflows, and
-    2. for remote sensing experts to use their data in machine learning workflows.
+    1. for machine learning experts to work with geospatial data, and
+    2. for remote sensing experts to explore machine learning solutions.
 
 extra:
   recipe-maintainers:
