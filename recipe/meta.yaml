@@ -18,6 +18,8 @@ build:
 requirements:
   host:
     - pip
+    # from tensorboard
+    - protobuf >=3.9.2,<3.20
     - python >=3.7,<4
     - setuptools >=42,<66
   run:
