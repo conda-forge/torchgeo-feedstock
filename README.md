@@ -7,18 +7,18 @@ Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/torchgeo-feedstock/blob/main/LICENSE.txt)
 
-Summary: TorchGeo: datasets, transforms, and models for geospatial data
+Summary: TorchGeo: datasets, samplers, transforms, and pre-trained models for geospatial data
 
 Development: https://github.com/microsoft/torchgeo
 
 Documentation: https://torchgeo.readthedocs.io/
 
-TorchGeo is a PyTorch domain library, similar to torchvision, that provides datasets, transforms, samplers, and pre-trained models specific to geospatial data.
+TorchGeo is a PyTorch domain library, similar to torchvision, providing datasets, samplers, transforms, and pre-trained models specific to geospatial data.
 
 The goal of this library is to make it simple
 
-1. for machine learning experts to use geospatial data in their workflows, and
-2. for remote sensing experts to use their data in machine learning workflows.
+1. for machine learning experts to work with geospatial data, and
+2. for remote sensing experts to explore machine learning solutions.
 
 
 Current build status
