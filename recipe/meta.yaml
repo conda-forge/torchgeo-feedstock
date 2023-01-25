@@ -42,7 +42,7 @@ requirements:
     - torchvision >=0.13,<0.15
 
     # https://github.com/conda-forge/pytorch-lightning-feedstock/issues/113
-    - lightning-utilities==0.3.*
+    - lightning-utilities ==0.3.*
 
 test:
   imports:
