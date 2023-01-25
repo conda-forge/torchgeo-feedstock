@@ -19,11 +19,11 @@ requirements:
   host:
     - pip
     - python >=3.7,<4
-    - setuptools >=42,<66
+    - setuptools >=42,<67
   run:
-    - einops >=0.3,<0.5
+    - einops >=0.3,<0.7
     - fiona >=1.8,<2
-    - kornia >=0.6.4,<0.7
+    - kornia >=0.6.5,<0.7
     - matplotlib-base >=3.3,<4
     - numpy >=1.17.2,<2
     - omegaconf >=2.1,<3
@@ -31,16 +31,16 @@ requirements:
     - pillow >=6.2,<10
     - pyproj >=2.2,<4
     - python >=3.7,<4
-    - pytorch >=1.9,<2
+    - pytorch >=1.12,<2
     - pytorch-lightning >=1.5.1,<2
     - rasterio >=1.0.20,<2
     - rtree >=1,<2
     - scikit-learn >=0.21,<2
     - segmentation-models-pytorch >=0.2,<0.4
-    - shapely >=1.3,<2
-    - timm >=0.4.12,<0.5
-    - torchmetrics >=0.7,<0.10
-    - torchvision >=0.10,<0.14
+    - shapely >=1.3,<3
+    - timm >=0.4.12,<0.7
+    - torchmetrics >=0.10,<0.12
+    - torchvision >=0.13,<0.15
 
 test:
   imports:
