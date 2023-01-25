@@ -41,6 +41,9 @@ requirements:
     - torchmetrics >=0.10,<0.12
     - torchvision >=0.13,<0.15
 
+    # https://github.com/conda-forge/pytorch-lightning-feedstock/issues/113
+    - lightning-utilities==0.3.*
+
 test:
   imports:
     - torchgeo
