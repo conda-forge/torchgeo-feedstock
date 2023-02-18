@@ -11,7 +11,7 @@ source:
   sha256: a0812487205aa2db7bc92119d896ae4bf4f1014e6fdc0ce0f75bcb24fada6613
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -23,7 +23,7 @@ requirements:
   run:
     - einops >=0.3,<0.7
     - fiona >=1.8,<2
-    - kornia >=0.6.5,<0.7
+    - kornia >=0.6.5,<0.6.10
     - matplotlib-base >=3.3,<4
     - numpy >=1.17.2,<2
     - omegaconf >=2.1,<3
