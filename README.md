@@ -1,11 +1,11 @@
-About torchgeo
-==============
+About torchgeo-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/torchgeo-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/microsoft/torchgeo
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/torchgeo-feedstock/blob/main/LICENSE.txt)
 
 Summary: TorchGeo: datasets, samplers, transforms, and pre-trained models for geospatial data
 
