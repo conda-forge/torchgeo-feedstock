@@ -19,11 +19,11 @@ requirements:
   host:
     - pip
     - python >=3.7,<4
-    - setuptools >=42,<67
+    - setuptools >=42,<68
   run:
     - einops >=0.3,<0.7
     - fiona >=1.8,<2
-    - kornia >=0.6.5,<0.6.10
+    - kornia >=0.6.5,<0.7
     - lightning >=1.8,<3
     - matplotlib-base >=3.3,<4
     - numpy >=1.17.2,<2
@@ -50,6 +50,8 @@ test:
     - torchgeo.samplers
     - torchgeo.trainers
     - torchgeo.transforms
+  #commands:
+  #  - pip check
   requires:
     - pip
 
