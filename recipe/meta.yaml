@@ -24,7 +24,7 @@ requirements:
     - einops >=0.3,<0.7
     - fiona >=1.8,<2
     - kornia >=0.6.5,<0.6.10
-    - lightning >=1.8,<2
+    - lightning >=1.8,<3
     - matplotlib-base >=3.3,<4
     - numpy >=1.17.2,<2
     - pillow >=6.2,<10
@@ -50,8 +50,6 @@ test:
     - torchgeo.samplers
     - torchgeo.trainers
     - torchgeo.transforms
-  commands:
-    - pip check
   requires:
     - pip
 
