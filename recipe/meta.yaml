@@ -52,6 +52,8 @@ test:
     - torchgeo.transforms
   commands:
     - pip check
+    - python -m torchgeo --help
+    - torchgeo --help
   requires:
     - pip
 
