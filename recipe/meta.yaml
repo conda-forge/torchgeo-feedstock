@@ -41,7 +41,7 @@ requirements:
     - torchvision >=0.13
 
     # Needed by LightningCLI
-    jsonargparse >=4.18
+    - jsonargparse >=4.18
 test:
   imports:
     - torchgeo
