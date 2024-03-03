@@ -157,5 +157,6 @@ Feedstock Maintainers
 
 * [@adamjstewart](https://github.com/adamjstewart/)
 * [@calebrob6](https://github.com/calebrob6/)
+* [@isaaccorley](https://github.com/isaaccorley/)
 * [@nilsleh](https://github.com/nilsleh/)
 
