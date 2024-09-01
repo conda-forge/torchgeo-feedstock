@@ -51,7 +51,8 @@ test:
     - torchgeo.losses
     - torchgeo.models
     - torchgeo.samplers
-    - torchgeo.trainers
+    # Uncomment when https://github.com/conda-forge/lightly-feedstock/issues/20 is resolved
+    # - torchgeo.trainers
     - torchgeo.transforms
   commands:
     - pip check
