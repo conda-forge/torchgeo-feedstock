@@ -1,5 +1,5 @@
 {% set name = "torchgeo" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/torchgeo-{{ version }}.tar.gz
-  sha256: c5b073b3c9ac06cd68e45620bab3a78fb7637fa3563aae4f75f4781ba57aee5a
+  sha256: 38c930917ea341d05a7a611ff74c017f29482df7455d50e287ea79dec7d0a14b
 
 build:
   number: 0
@@ -31,7 +31,7 @@ requirements:
     - pandas >=1.3.3
     - pillow >=8.4
     - pyproj >=3.3
-    - rasterio >=1.3
+    - rasterio >=1.3,<1.4
     - rtree >=1
     - segmentation-models-pytorch >=0.2
     - shapely >=1.8
@@ -51,14 +51,12 @@ test:
     - torchgeo.losses
     - torchgeo.models
     - torchgeo.samplers
-    # Uncomment when https://github.com/conda-forge/lightly-feedstock/issues/20 is resolved
-    # - torchgeo.trainers
+    - torchgeo.trainers
     - torchgeo.transforms
   commands:
     - pip check
-    # Uncomment when https://github.com/conda-forge/lightly-feedstock/issues/20 is resolved
-    # - python -m torchgeo --help
-    # - torchgeo --help
+    - python -m torchgeo --help
+    - torchgeo --help
   requires:
     - pip
 
