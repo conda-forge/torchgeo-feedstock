@@ -31,7 +31,7 @@ requirements:
     - pandas >=1.3.3
     - pillow >=8.4
     - pyproj >=3.3
-    - rasterio >=1.3
+    - rasterio >=1.3,<1.4
     - rtree >=1
     - segmentation-models-pytorch >=0.2
     - shapely >=1.8
@@ -51,14 +51,12 @@ test:
     - torchgeo.losses
     - torchgeo.models
     - torchgeo.samplers
-    # Uncomment when https://github.com/conda-forge/lightly-feedstock/issues/20 is resolved
-    # - torchgeo.trainers
+    - torchgeo.trainers
     - torchgeo.transforms
   commands:
     - pip check
-    # Uncomment when https://github.com/conda-forge/lightly-feedstock/issues/20 is resolved
-    # - python -m torchgeo --help
-    # - torchgeo --help
+    - python -m torchgeo --help
+    - torchgeo --help
   requires:
     - pip
 
