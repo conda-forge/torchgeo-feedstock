@@ -1,5 +1,6 @@
 {% set name = "torchgeo" %}
 {% set version = "0.6.2" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -18,11 +19,11 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - setuptools >=61
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - einops >=0.3
     - fiona >=1.8.21
     - kornia >=0.7.3
@@ -60,6 +61,7 @@ test:
     - pip check
     - torchgeo --help
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
