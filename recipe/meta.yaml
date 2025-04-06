@@ -45,7 +45,8 @@ requirements:
     - typing-extensions >=4.5
 
     # Needed by LightningCLI
-    - jsonargparse >=4.27.7
+    # https://github.com/conda-forge/torchgeo-feedstock/issues/21
+    - jsonargparse >=4.27.7  # [not win]
     - typeshed-client >=2.1
 
 test:
