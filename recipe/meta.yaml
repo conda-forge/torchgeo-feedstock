@@ -1,5 +1,5 @@
 {% set name = "torchgeo" %}
-{% set version = "0.6.2" %}
+{% set version = "0.7.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/torchgeo-{{ version }}.tar.gz
-  sha256: 82f49f0d18d2c22cc70fc0690641e8dd60e4904a9c50d32c79ebd5020ac10fa7
+  sha256: 4ba0e96ea826080f393b1bb719a3f8c364637112710b1ac38c56b9590a638e29
 
 build:
   entry_points:
