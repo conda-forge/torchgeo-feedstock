@@ -45,8 +45,9 @@ requirements:
     - typing-extensions >=4.5
 
     # Needed by LightningCLI
-    - jsonargparse[signatures] >=4.25.0
-    - typeshed-client >=2.1
+    - jsonargparse >=4.25.0
+    - typeshed-client >=2.8.2
+    - docstring-parser>=0.17
 
 test:
   imports:
@@ -87,3 +88,13 @@ extra:
     - isaaccorley
     - nilsleh
     - ashnair1
+
+
+signatures = [
+    "jsonargparse[typing-extensions]",
+    "docstring-parser>=0.17",
+    "typeshed-client>=2.8.2",
+]
+typing-extensions = [
+    "typing-extensions>=3.10.0.0; python_version < '3.10'",
+]
