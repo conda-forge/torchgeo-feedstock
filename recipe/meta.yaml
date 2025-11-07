@@ -45,7 +45,7 @@ requirements:
     - typing-extensions >=4.5
 
     # Needed by LightningCLI
-    - jsonargparse >=4.25.0
+    - jsonargparse >=4.27.7
     - typeshed-client >=2.8.2
     - docstring_parser >=0.17
 
