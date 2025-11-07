@@ -47,7 +47,7 @@ requirements:
     # Needed by LightningCLI
     - jsonargparse >=4.25.0
     - typeshed-client >=2.8.2
-    - docstring-parser >=0.17
+    - docstring_parser >=0.17
 
 test:
   imports:
