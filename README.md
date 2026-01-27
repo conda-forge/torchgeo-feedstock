@@ -9,7 +9,7 @@ Package license: MIT
 
 Summary: TorchGeo: datasets, samplers, transforms, and pre-trained models for geospatial data
 
-Development: https://github.com/microsoft/torchgeo
+Development: https://github.com/torchgeo/torchgeo
 
 Documentation: https://torchgeo.readthedocs.io/
 
