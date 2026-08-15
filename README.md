@@ -11,7 +11,7 @@ Summary: TorchGeo: datasets, samplers, transforms, and pre-trained models for ge
 
 Development: https://github.com/torchgeo/torchgeo
 
-Documentation: https://torchgeo.readthedocs.io/
+Documentation: https://docs.torchgeo.org
 
 TorchGeo is a PyTorch domain library, similar to torchvision, providing datasets, samplers, transforms, and pre-trained models specific to geospatial data.
 
@@ -25,10 +25,11 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14574&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/torchgeo-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/torchgeo-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/torchgeo-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -51,31 +52,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `torchgeo` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install torchgeo
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install torchgeo
 ```
 
-It is possible to list all of the versions of `torchgeo` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add torchgeo
+# for installing globally
+pixi global install torchgeo
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `torchgeo` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search torchgeo --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search torchgeo --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search torchgeo --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -87,6 +130,8 @@ mamba repoquery whoneeds torchgeo --channel conda-forge
 # List dependencies of `torchgeo`:
 mamba repoquery depends torchgeo --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
@@ -160,4 +205,5 @@ Feedstock Maintainers
 * [@calebrob6](https://github.com/calebrob6/)
 * [@isaaccorley](https://github.com/isaaccorley/)
 * [@nilsleh](https://github.com/nilsleh/)
+* [@robmarkcole](https://github.com/robmarkcole/)
 
