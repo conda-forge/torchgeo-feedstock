@@ -1,5 +1,5 @@
 {% set name = "torchgeo" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/torchgeo-{{ version }}.tar.gz
-  sha256: 93858ccd1cd9cc25b022572dabcd94a024160529a3bd7fc75dc28e995240ca6c
+  sha256: fc0357a4d6847cbd7cd5baa0f6a48b61c9a7b83f11d2d1a4c8c9d35de9f0bc26
 
 build:
   entry_points:
@@ -20,33 +20,37 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=77.0.1
+    - uv-build >=0.7
     - pip
   run:
     - python >={{ python_min }}
     - einops >=0.3
-    - geopandas >=0.13
-    - jsonargparse >=4.35
+    - geopandas >=1
+    - jsonargparse >=4.39
     - kornia >=0.8.2
-    - lightly >=1.4.5,!=1.4.26
-    - lightning >=2,!=2.3.*,!=2.5.0,!=2.5.5,!=2.5.6
+    - lightly >=1.5.1
+    - lightning >=2.4,!=2.5.0,!=2.5.5,!=2.5.6
     - matplotlib-base >=3.7.3
     - numpy >=1.26
     - pandas >=2.1.1
     - pillow >=10
+    - pyogrio >=0.10
     - pyproj >=3.6.1
     - rasterio >=1.4.3
+    - requests >=2.25
     - segmentation-models-pytorch >=0.5
     - shapely >=2.0.2
     - timm >=1.0.3
     - pytorch >=2.2
-    - torchmetrics >=1.2
+    - torchmetrics >=1.5
     - torchvision >=0.17
+    - tqdm >=4.57
     - typing-extensions >=4.8
 
     # Needed by LightningCLI
-    - typeshed-client >=2.8.2
     - docstring_parser >=0.17
+    - typeshed-client >=2.8.2
+    - jsonnet >=0.21
 
 test:
   imports:
@@ -55,6 +59,7 @@ test:
     - torchgeo.datasets
     - torchgeo.losses
     - torchgeo.models
+    - torchgeo.profilers
     - torchgeo.samplers
     - torchgeo.trainers
     - torchgeo.transforms
@@ -78,7 +83,7 @@ about:
     1. for machine learning experts to work with geospatial data, and
     2. for remote sensing experts to explore machine learning solutions.
   dev_url: https://github.com/torchgeo/torchgeo
-  doc_url: https://torchgeo.readthedocs.io/
+  doc_url: https://docs.torchgeo.org
 
 extra:
   recipe-maintainers:
@@ -87,3 +92,4 @@ extra:
     - isaaccorley
     - nilsleh
     - ashnair1
+    - robmarkcole
