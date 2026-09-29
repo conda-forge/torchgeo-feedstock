@@ -45,7 +45,7 @@ requirements:
     - torchmetrics >=1.5
     - torchvision >=0.17
     - tqdm >=4.57
-    - typing-extensions >=4.8
+    - typing_extensions >=4.8
 
     # Needed by LightningCLI
     - docstring_parser >=0.17
